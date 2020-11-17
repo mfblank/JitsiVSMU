@@ -1,9 +1,9 @@
 {
   "name": "jitsi-meet-electron",
-  "version": "0.0.1",
-  "description": "Electron application for Meet VSMU",
+  "version": "1.0.0",
+  "description": "Electron application for Meetings E-VSMU",
   "main": "./build/main.js",
-  "productName": "Meet VSMU",
+  "productName": "Meetings E-VSMU",
   "scripts": {
     "start": "webpack --config ./webpack.main.js --mode development && concurrently \"npm:watch\" \"electron ./build/main.js\"",
     "clean": "rm -rf node_modules build dist",
@@ -19,7 +19,7 @@
   },
   "build": {
     "appId": "org.jitsi.jitsi-meet",
-    "productName": "Meet VSMU",
+    "productName": "Meetings E-VSMU",
     "generateUpdatesFilesForAllChannels": true,
     "files": [
       "**/*",
@@ -28,21 +28,21 @@
       "!main.js"
     ],
     "mac": {
-      "artifactName": "jitsi-meet.${ext}",
+      "artifactName": "Meetings E-VSMU.${ext}",
       "category": "public.app-category.video",
       "darkModeSupport": true,
       "hardenedRuntime": true,
       "entitlements": "entitlements.mac.plist",
       "entitlementsInherit": "entitlements.mac.plist",
       "extendInfo": {
-        "NSCameraUsageDescription": "Jitsi Meet requires access to your camera in order to make video-calls.",
-        "NSMicrophoneUsageDescription": "Jitsi Meet requires access to your microphone in order to make calls (audio/video)."
+        "NSCameraUsageDescription": "Meetings E-VSMU requires access to your camera in order to make video-calls.",
+        "NSMicrophoneUsageDescription": "Meetings E-VSMU requires access to your microphone in order to make calls (audio/video)."
       }
     },
     "linux": {
-      "artifactName": "jitsi-meet-${arch}.${ext}",
+      "artifactName": "Meetings E-VSMU-${arch}.${ext}",
       "category": "VideoConference;AudioVideo;Audio;Video;Network",
-      "description": "Jitsi Meet Desktop App",
+      "description": "Meetings E-VSMU Desktop App",
       "executableName": "jitsi-meet",
       "target": [
         {
@@ -52,7 +52,7 @@
       ]
     },
     "win": {
-      "artifactName": "MeetVSMU.${ext}",
+      "artifactName": "Meetings E-VSMU.${ext}",
       "target": [
         {
           "arch": [
@@ -90,7 +90,7 @@
     "electron",
     "jitsi-meet"
   ],
-  "author": "Pavel Galkin <galkin.pasha.ya@gmail.com> & Jitsi Team <support@jitsi.org>",
+  "author": "VSMU / Department of Information Technology - Pavel Galkin",
   "readmeFilename": "README.md",
   "license": "Apache-2.0",
   "dependencies": {
