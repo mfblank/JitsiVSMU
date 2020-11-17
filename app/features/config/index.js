@@ -3,17 +3,17 @@ export default {
     /**
      * The URL with extra information about the app / service.
      */
-    aboutURL: 'https://m.tc-vsmu.by',
+    aboutURL: 'https://meet.e-vsmu.by',
 
     /**
      * The URL to the source code repository.
      */
-    sourceURL: 'https://m.tc-vsmu.by',
+    sourceURL: 'https://meet.e-vsmu.by',
 
     /**
      * Application name.
      */
-    appName: 'MeetVSMU',
+    appName: 'Meetings E-VSMU',
 
     /**
     * The prefix for application protocol.
@@ -24,7 +24,7 @@ export default {
     /**
      * The default server URL of Jitsi Meet Deployment that will be used.
      */
-    defaultServerURL: 'https://m.tc-vsmu.by',
+    defaultServerURL: 'https://meet.e-vsmu.by',
 
     /**
      * The default server Timeout in seconds.
